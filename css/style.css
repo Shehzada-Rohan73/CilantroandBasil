@@ -7,7 +7,10 @@
 	box-sizing: border-box;
 }
 body {
-	padding-bottom: 50px;
+	padding-bottom: 20px;
+}
+button:hover {
+	cursor: pointer;
 }
 .mt-5 {
 	margin-top: 25px;
@@ -29,8 +32,8 @@ body {
 	margin-left: 70px;
 }
 .btn-semicircle {
-	height: 20px;
-	width: 40px;
+	height: 30px;
+	width: 50px;
 	bottom: 0;
 	margin-top: 10px;
 	margin-bottom: -20px;
@@ -113,10 +116,14 @@ a {
 	z-index: 1;
 }
 
-.logo {
+.home .logo {
 	height: 120px;
 	width: 120px;
 	margin-bottom: -60px;
+}
+.logo {
+	height: 100px;
+	width: 100px;
 }
 
 .cartDetails {
@@ -371,9 +378,11 @@ div.card-image img {
 	color: #fff !important;
 }
 /* Header Css*/
+.header {
+	display: flex;
+}
 .header_column {
-	height: 100%;
-	align-items: flex-end;
+	align-self: center;
 }
 
 /* Hero CSS */
@@ -498,8 +507,7 @@ div.card-image img {
 /* About CSS */
 .aboutus_image {
 	height: 570px;
-	background-size: cover;
-	background-position: center;
+	object-fit: cover;
 	overflow: visible;
 }
 .aboutus .heading {
@@ -557,8 +565,9 @@ div.card-image img {
 /* Client CSS */
 .client {
 	height: 715px;
-	background-image: url("./../img/bg1.jpg"),
+	background-image: url("./../img/shutterstock_1198340449-Slider1.jpg"),
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-blend-mode: overlay;
 	background-position: center;
 	background-size: cover;
 	margin: 100px 0;
@@ -800,10 +809,13 @@ div.card-image img {
 .input_text {
 	width: 100%;
 	height: 40px;
-	margin: 10px;
 	padding: 25px 20px;
-	border-color: #ebebe7;
+	border: 2px solid #ebebe7;
 	border-radius: 5px;
+}
+.input_text:focus {
+	outline: none !important;
+	border: 2px solid #efa27d;
 }
 textarea {
 	resize: vertical;
@@ -830,13 +842,28 @@ textarea {
 .feedback_top {
 	display: flex;
 }
+.feedback_top {
+	flex: 1;
+}
+.feedback_top .input_text {
+	width: 95%;
+}
+.feedback .input_text:first-child {
+	margin-right: 5px;
+}
+.feedback .input_text:last-child {
+	margin-left: 5px;
+}
+.feedback textarea {
+	margin-top: 10px;
+}
 
 /* Footer CSS */
 .footer_wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 60px 0;
+	margin: 30px 0;
 }
 .footer_text {
 	color: #808369;
@@ -860,6 +887,13 @@ textarea {
 	display: flex;
 	justify-content: center;
 }
+.footer_column {
+	width: 250px;
+}
+.footer_icon:hover {
+	background-color: #efa27d;
+	cursor: pointer;
+}
 
 /* 
 //////////////////////////////	ABOUT US PAGE /////////////////////////////////////////////
@@ -868,7 +902,9 @@ textarea {
 /* Banner CSS */
 .banner {
 	height: 330px;
-	background-image: url("./../img/post-11-370x200.jpg");
+	background-image: url("./../img/shutterstock_654336859-Slide2.jpg"),
+		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-blend-mode: overlay;
 	background-position: center;
 	background-size: cover;
 	display: flex;
