@@ -469,15 +469,15 @@ div.card-image img {
 	justify-content: center;
 }
 .catering_card_1 {
-	background-image: url("./../img/welcome_img1.jpg"),
+	background-image: url("./../img/shutterstock_1327176395\ -\ Naan.jpg"),
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .catering_card_2 {
-	background-image: url("./../img/welcome_img2.jpg"),
+	background-image: url("./../img/shutterstock_1941625765\ -\ Paalak\ Paneer.jpg"),
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .catering_card_3 {
-	background-image: url("./../img/welcome_img3.jpg"),
+	background-image: url("./../img/shutterstock_262999007\ -\ Bread.jpg"),
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .fontCursive {
@@ -526,6 +526,10 @@ div.card-image img {
 	margin-right: auto;
 	width: 80%;
 	z-index: 1;
+}
+.success_img {
+	height: 530px !important;
+	object-fit: cover;
 }
 
 .float-layout {
