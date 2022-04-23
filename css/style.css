@@ -275,8 +275,8 @@ a {
 	font-size: 3rem;
 }
 
-.aboutus {
-}
+.aboutus {}
+
 .about_us_bg_img {
 	height: 535px;
 }
@@ -505,6 +505,7 @@ div.card-image img {
 	justify-content: space-evenly;
 	margin: 50px;
 }
+
 .catering_card {
 	height: 470px;
 	width: 370px;
@@ -690,9 +691,11 @@ div.card-image img {
 	margin-top: 50px;
 	margin-bottom: 100px;
 }
+
 .event_container {
 	display: flex;
 }
+
 .event_left_column {
 	text-align: right;
 	display: flex;
@@ -873,6 +876,7 @@ div.card-image img {
 	height: 260px;
 	margin-bottom: 20px;
 }
+
 .project_img_large {
 	height: 545px;
 	margin-bottom: 20px;
@@ -939,8 +943,7 @@ textarea {
 	min-height: 200px;
 }
 
-.message_btn {
-}
+.message_btn {}
 
 .feedback {
 	width: 60%;
@@ -1145,6 +1148,50 @@ textarea {
 	color: #929292;
 }
 
+/* Contact CSS */
+.contact-card-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.contact-card{
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-card .content-wrapper{
+	margin-top: -40px;
+	display: flex;
+	flex-direction: column;
+	background-color: #F5F2ED;
+	width: 370px;
+	height: 260px;
+	align-items: center;
+	justify-content: center;
+}
+.contact-card .title{
+	font-family: "Yellowtail", sans-serif;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.contact-card .description{
+	font-size: 14px;
+}
+.contact_icon{
+	height: 26px;
+	width: 26px;
+	color: #808369;
+	background-color: #fff;
+	z-index: 1;
+	padding: 50px;
+	border-radius: 50%;
+}
+.contact_icon:hover{
+	color: #efa27d;
+}
+/* Contact CSS End */
+
 /* Gallery CSS */
 .gallery {
 	background-color: #f5f2ed;
@@ -1248,8 +1295,7 @@ textarea {
 	color: #fff;
 }
 
-.menu_outer_wrapper {
-}
+.menu_outer_wrapper {}
 
 .menu_category {
 	font-size: 16px;
@@ -1293,31 +1339,38 @@ textarea {
 	.project_img_large {
 		height: 260px;
 	}
+
 	.event_center_column {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
 	}
+
 	.event_container {
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.event_left_column {
 		text-align: left;
 	}
+
 	.event_left_column,
 	.event_right_column {
 		align-items: center;
 	}
+
 	.event_left_column .event_detail_container {
 		align-items: flex-start;
 		flex-direction: row-reverse;
 	}
+
 	.feedback {
 		width: 100%;
 	}
 }
+
 @media (min-width: 768px) {
 	.container {
 		width: 750px;
@@ -1340,18 +1393,24 @@ textarea {
 
 /* #region Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {
+	.contact-card .content-wrapper{
+		width: 250px;
+	}
 	.topnav a,
 	.topnav-right {
 		float: none;
 		display: block;
 	}
+
 	.border-white-top-circle {
 		display: none;
 	}
+
 	.home .logo {
 		height: 80px;
 		width: 80px;
 	}
+
 	.topnav-centered a {
 		position: relative;
 		top: 0;
@@ -1372,10 +1431,12 @@ textarea {
 	min-height: 4rem;
 	margin-top: 0;
 }
+
 .bg-white {
 	margin-top: 20px;
 	background-color: #fff;
 }
+
 .alignleft {
 	margin-top: 20px;
 	float: left;
@@ -1383,12 +1444,14 @@ textarea {
 	text-align: left;
 	color: #929292;
 }
+
 .aligncenter {
 	margin-top: 20px;
 	float: left;
 	width: 50%;
 	text-align: center;
 }
+
 .alignright {
 	margin-top: 10px;
 	float: left;
@@ -1396,6 +1459,7 @@ textarea {
 	text-align: right;
 	color: #929292;
 }
+
 .navbar_icon {
 	text-align: center;
 	padding-top: 8px;
@@ -1406,12 +1470,15 @@ textarea {
 	height: 30px;
 	width: 30px;
 }
+
 .fa-user {
 	color: #929292;
 }
+
 .login {
 	margin-right: 35px;
 }
+
 /* Blog container */
 
 .blog-container {
@@ -1654,49 +1721,62 @@ input[type="text"]::placeholder {
 	.commenter-indent {
 		margin-left: 5px;
 	}
+
 	.gallery_img {
 		height: 125px;
 		background-size: cover;
 	}
+
 	.galler_image_container {
 		display: grid;
 	}
+
 	.contact {
 		width: 100%;
 	}
+
 	.cartDetails {
 		width: 100%;
 		margin-left: -5px;
 	}
+
 	.row {
 		display: flex;
 	}
+
 	.catering_card_wrapper {
 		display: grid;
 	}
+
 	.team_card_wrapper {
 		display: grid;
 	}
+
 	.blog-image {
 		margin-top: 0px !important;
 		height: 220px;
 	}
+
 	.hr-wrap {
 		border-bottom: #f3f1ec;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
+
 	.pagination {
 		margin-top: 35px;
 		display: inline-block;
 		margin-left: 110px;
 	}
+
 	.blog-navbar {
 		display: none;
 	}
+
 	.blog-img-heading {
 		font-size: 22px;
 	}
+
 	.blog-main {
 		padding: 35px;
 	}
@@ -1707,36 +1787,45 @@ input[type="text"]::placeholder {
 		height: 250px;
 		background-size: cover;
 	}
+
 	.contact {
 		width: 100%;
 	}
+
 	.cartDetails {
 		width: 100%;
 		left: 20px;
 	}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 	.catering_card_wrapper {
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 	.team_card_wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		grid-gap: 20px;
 	}
+
 	.blog-main {
 		flex: 8 !important;
 	}
+
 	.blog-side {
 		padding: 40px;
 	}
+
 	.blog-side-wrapper {
 		flex: 8 !important;
 		width: 100%;
 	}
+
 	.pagination {
 		margin-top: 35px;
 		display: inline-block;
@@ -1748,16 +1837,20 @@ input[type="text"]::placeholder {
 	.blog-navbar {
 		display: none;
 	}
+
 	.blog-side {
 		padding: 40px;
 	}
+
 	.blog-img-heading {
 		font-size: 25px;
 	}
+
 	.blog-image {
 		margin-top: 20px !important;
 		height: 300px;
 	}
+
 	.hr-wrap {
 		border-bottom: #f3f1ec;
 		margin-top: 50px;
