@@ -12,7 +12,7 @@
 		></script>
 	</head>
 	<body>
-		<div class="home container">
+		<div class="home">
 			<nav class="topnav">
 				<ul class="topnav-centered">
 					<li>
@@ -35,7 +35,7 @@
 					</li>
 					<li><a href="menu.html">MENU</a></li>
 					<li>
-						<a href="#services">GALLERY</a>
+						<a href="gallery.html">GALLERY</a>
 						<ul class="d-none">
 							<li>All Services</li>
 							<li>Single Services</li>
@@ -87,12 +87,12 @@
 								</p>
 								<div class="border-white-bottom"></div>
 
-								<p
+								<a
 									class="btn-primary hero_btn"
-									onclick="orderService()"
+									href="menu.html"
 								>
 									ORDER SERVICE
-								</p>
+								</a>
 							</div>
 						</div>
 
@@ -149,15 +149,15 @@
 						</div>
 
 						<div class="border-white-bottom-circle">
-							<span onclick="scrollTo()">
+							<a href="#catering">
 								<i class="fa-solid fa-chevron-down"></i>
-							</span>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div id="catering" class="row text-center">
+			<section id="catering" class="row text-center">
 				<div class="heading">
 					<h6 class="sub_heading">CATERING</h6>
 					<h2 class="main_heading">
@@ -166,7 +166,7 @@
 					</h2>
 					<span class="heading_underline"></span>
 				</div>
-			</div>
+			</section>
 
 			<div class="catering_card_container">
 				<div class="catering_card catering_card_1">
@@ -234,7 +234,9 @@
 											to healthy living. Interesting, eh?
 										</div>
 										<button class="btn-primary storyBtn">
-											READ FULL STORY
+											<a href="about_us.html"
+												>READ FULL STORY</a
+											>
 										</button>
 									</div>
 								</div>
@@ -264,9 +266,6 @@
 										class="img1 imgresponsive"
 									/>
 									<p class="card-footer-text">CANAPES</p>
-									<button class="btn-semicircle">
-										<i class="fa-solid fa-chevron-down"></i>
-									</button>
 								</figure>
 								<figure class="fourcard">
 									<figcaption class="card-hover">
@@ -283,9 +282,6 @@
 										class="img1 imgresponsive"
 									/>
 									<p class="card-footer-text">CANAPES</p>
-									<button class="btn-semicircle">
-										<i class="fa-solid fa-chevron-down"></i>
-									</button>
 								</figure>
 								<figure class="fourcard">
 									<figcaption class="card-hover">
@@ -302,9 +298,6 @@
 										class="img1 imgresponsive"
 									/>
 									<p class="card-footer-text">CANAPES</p>
-									<button class="btn-semicircle">
-										<i class="fa-solid fa-chevron-down"></i>
-									</button>
 								</figure>
 								<figure class="fourcard">
 									<figcaption class="card-hover">
@@ -321,9 +314,6 @@
 										class="img1 imgresponsive"
 									/>
 									<p class="card-footer-text">CANAPES</p>
-									<button class="btn-semicircle">
-										<i class="fa-solid fa-chevron-down"></i>
-									</button>
 								</figure>
 							</div>
 
@@ -332,7 +322,7 @@
 							</div>
 							<div class="custom-full-menu">
 								<button class="btn-primary menu_btn">
-									VIEW FULL MENU
+									<a href="menu.html">VIEW FULL MENU</a>
 								</button>
 							</div>
 						</div>
@@ -392,7 +382,7 @@
 						src="./img/shutterstock_1840255840 - chaat.jpg"
 						class="eventImg imgresponsive"
 					/>
-					<br/>
+					<br />
 					<button class="btn-primary event_btn">
 						VIEW MORE SERVICES
 					</button>
@@ -473,17 +463,95 @@
 							class="testimonial_image"
 						/>
 						<p class="testimonial_text">
-							We were glad to have you as our caterer on the
-							special day such as our wedding! Thank you for your
-							amazing work, we recommend your service to everyone
+							Excellent food, great service!
 						</p>
-						<p class="testimonial_author">
-							- Nicole and Steven Martin, NY
-						</p>
+						<p class="testimonial_author">- Jay Patel, NY</p>
 					</div>
 					<button class="testimonial_btn testimonial_btn_right">
 						<i class="fa-solid fa-chevron-right"></i>
 					</button>
+				</div>
+			</div>
+			<div class="faq row text-center">
+				<div class="heading">
+					<h6 class="sub_heading">FAQ</h6>
+					<h2 class="main_heading">Questions asked</h2>
+					<span class="heading_underline"></span>
+				</div>
+
+				<div class="faq-content">
+					<div class="faq-question">
+						<input id="q1" type="checkbox" class="panel" />
+						<div class="plus">+</div>
+						<label for="q1" class="panel-title"
+							>Do you deliver?
+						</label>
+						<div class="panel-content">
+							Yes. We charge delivery costs based on distance.
+						</div>
+					</div>
+					<div class="faq-question">
+						<input id="q2" type="checkbox" class="panel" />
+						<div class="plus">+</div>
+						<label for="q2" class="panel-title"
+							>Do you take special orders?</label
+						>
+						<div class="panel-content">
+							Yes, for 10 ppl and more
+						</div>
+					</div>
+					<div class="faq-question">
+						<input id="q3" type="checkbox" class="panel" />
+						<div class="plus">+</div>
+						<label for="q3" class="panel-title"
+							>Do you do catering?</label
+						>
+						<div class="panel-content">Yes we do</div>
+					</div>
+					<div class="faq-question">
+						<input id="q4" type="checkbox" class="panel" />
+						<div class="plus">+</div>
+						<label for="q4" class="panel-title"
+							>How much is the delivery charges?</label
+						>
+						<div class="panel-content">Depends on miles</div>
+					</div>
+					<div class="faq-question">
+						<input id="q5" type="checkbox" class="panel" />
+						<div class="plus">+</div>
+						<label for="q5" class="panel-title"
+							>What is the pick up and delivery time?</label
+						>
+						<div class="panel-content">After 3 pm</div>
+					</div>
+					<div class="faq-question">
+						<input id="q6" type="checkbox" class="panel" />
+						<div class="plus">+</div>
+						<label for="q6" class="panel-title"
+							>Do you change your menu every week?</label
+						>
+						<div class="panel-content">Yes</div>
+					</div>
+					<div class="faq-question">
+						<input id="q7" type="checkbox" class="panel" />
+						<div class="plus">+</div>
+						<label for="q7" class="panel-title"
+							>Do you take an order for only rotis?</label
+						>
+						<div class="panel-content">
+							No, it’s a full meal service.
+						</div>
+					</div>
+					<div class="faq-question">
+						<input id="q8" type="checkbox" class="panel" />
+						<div class="plus">+</div>
+						<label for="q8" class="panel-title"
+							>What is the pick up address?</label
+						>
+						<div class="panel-content">
+							3876, west whitewater ave Weston
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="row text-center">
@@ -530,7 +598,9 @@
 						</div>
 					</div>
 				</div>
-				<button class="btn-primary articles_btn">MORE ARTICLES</button>
+				<button class="btn-primary articles_btn">
+					<a href="blog.html">MORE ARTICLES</a>
+				</button>
 			</div>
 
 			<!-- <div class="row text-center">
@@ -600,7 +670,7 @@
 					</div>
 				</div>
 				<button class="btn-primary articles_btn">
-					VIEW MORE PROJECTS
+					<a href="gallery.html">VIEW MORE PROJECTS</a>
 				</button>
 			</div>
 
@@ -684,10 +754,6 @@
 				}
 				slides[slideIndex - 1].style.display = "flex";
 				setTimeout(showSlides, 5000); // Change image every 2 seconds
-			}
-
-			function orderService() {
-				console.log("Called");
 			}
 
 			let feedbackSlideIndex = 1;
