@@ -1201,12 +1201,18 @@ textarea {
 
 /* Team CSS */
 .team_card_outer_wrapper,
-.gallery_outer_wrapper,
 .menu_outer_wrapper {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+	align-items: center;
+}
+.gallery_outer_wrapper {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 	align-items: center;
 }
 .catering_outer_wrapper {
@@ -1315,6 +1321,9 @@ textarea {
 
 .galler_image_container {
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
 .gallery_image_wrapper {
@@ -1323,6 +1332,7 @@ textarea {
 
 .gallery_img {
 	height: 325px;
+	width: 400px;
 	background-size: cover;
 }
 
@@ -1519,6 +1529,7 @@ textarea {
 	.logo {
 		height: 80px;
 		width: 80px;
+		margin-bottom: 0;
 	}
 
 	.topnav-centered a {
@@ -1835,10 +1846,6 @@ input[type="text"]::placeholder {
 	.gallery_img {
 		height: 125px;
 		background-size: cover;
-	}
-
-	.galler_image_container {
-		display: grid;
 	}
 
 	.contact {
