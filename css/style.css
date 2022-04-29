@@ -1532,6 +1532,12 @@ textarea {
 		margin-bottom: 0;
 	}
 
+	.home .logo {
+		height: 80px;
+		width: 80px;
+		margin-bottom: 0;
+	}
+
 	.topnav-centered a {
 		position: relative;
 		top: 0;
