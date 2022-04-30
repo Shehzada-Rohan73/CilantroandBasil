@@ -12,6 +12,17 @@
 		></script>
 	</head>
 	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="index.html">Home</a>
+			<a href="about_us.html">About us</a>
+			<a href="menu.html">Menu</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="blog.html">Blog</a>
+			<a href="contact.html">Contact</a>
+		</div>
 		<div>
 			<nav class="topnav">
 				<ul class="topnav-centered">
@@ -48,6 +59,7 @@
 
 			<div class="row header">
 				<div class="column header_column">
+					<span class="hamburger" onclick="openNav()">&#9776;</span>
 					<div class="contact">
 						<a href="tel:+4733378901">✆ 123-456-7890</a><br />
 						<a href="mailto:info@yoursite.com">INFO@YOURSITE.COM</a>
@@ -368,7 +380,7 @@
 				</div>
 			</div>
 
-			<div class="gallery">
+			<div class="gallery menu_gallery">
 				<div class="heading gallery_heading">
 					<h6 class="sub_heading">GALLERY</h6>
 					<h2 class="main_heading">View Our Recent Projects</h2>
@@ -446,8 +458,14 @@
 			</div>
 		</div>
 	</body>
-
 	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "300px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
 		function openMenu(evt, itemName) {
 			var i, tabContent, tabLinks;
 

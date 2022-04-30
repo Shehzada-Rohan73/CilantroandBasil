@@ -12,34 +12,31 @@
 		></script>
 	</head>
 	<body>
-		<div class="home">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="index.html">Home</a>
+			<a href="about_us.html">About us</a>
+			<a href="menu.html">Menu</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="blog.html">Blog</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<div>
 			<nav class="topnav">
 				<ul class="topnav-centered">
 					<li>
 						<a href="index.html" class="active"
 							><i class="fa-solid fa-house-chimney"></i
 						></a>
-						<ul class="d-none">
-							<li><a href="">Home Boxed</a></li>
-							<li><a href="">Home Wide</a></li>
-							<li><a href="">Home Video</a></li>
-							<li><a href="">Home Elementor</a></li>
-						</ul>
 					</li>
 					<li>
 						<a href="about_us.html">ABOUT US</a>
-						<ul class="d-none">
-							<li><a href="">Style 1</a></li>
-							<li><a href="">Style 2</a></li>
-						</ul>
 					</li>
 					<li><a href="menu.html">MENU</a></li>
 					<li>
 						<a href="gallery.html">GALLERY</a>
-						<ul class="d-none">
-							<li>All Services</li>
-							<li>Single Services</li>
-						</ul>
 					</li>
 					<li><a href="blog.html">BLOG</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
@@ -48,6 +45,7 @@
 
 			<div class="row header">
 				<div class="column header_column">
+					<span class="hamburger" onclick="openNav()">&#9776;</span>
 					<div class="contact">
 						<a href="tel:+4733378901">✆ 123-456-7890</a><br />
 						<a href="mailto:info@yoursite.com">INFO@YOURSITE.COM</a>
@@ -75,7 +73,7 @@
 						<div class="border-white-top-circle"></div>
 
 						<div
-							class="hero_banner_container"
+							class="hero_banner_container imgresponsive"
 							style="
 								background-image: url('./img/shutterstock_1198340449-Slider1.jpg');
 							"
@@ -134,15 +132,7 @@
 							</div>
 						</div>
 						<!-- The dots/circles -->
-						<div
-							style="
-								text-align: center;
-								position: absolute;
-								margin-top: -100px;
-								left: 50%;
-								transform: translate(-50%, 0%);
-							"
-						>
+						<div class="dots-group">
 							<span class="dot"></span>
 							<span class="dot"></span>
 							<span class="dot"></span>
@@ -339,7 +329,7 @@
 				<span class="heading_underline"></span>
 			</div>
 			<div class="row text-center mt-5 event_container">
-				<div class="column event_left_column">
+				<div class="event_left_column">
 					<div class="event_detail_container">
 						<div style="margin-top: 5px">
 							<span class="event_title">Weddings</span>
@@ -377,7 +367,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="column event_center_column">
+				<div class="event_center_column">
 					<img
 						src="./img/shutterstock_1840255840 - chaat.jpg"
 						class="eventImg imgresponsive"
@@ -387,7 +377,7 @@
 						VIEW MORE SERVICES
 					</button>
 				</div>
-				<div class="column event_right_column">
+				<div class="event_right_column">
 					<div class="event_detail_container">
 						<div>
 							<span class="event_number">01</span>
@@ -427,21 +417,18 @@
 				</div>
 			</div>
 			<div class="row mt-5 clienaboutus">
-				<div class="book_section image-holder flash">
-					<img
-						src="./img/bg2.jpg"
-						class="imgresponsive about_us_bg_img"
-					/>
-					<div class="custom-text-row">
-						<p class="imgTextCentered">
-							Book Your Tasting Session or Discuss Your Project
-						</p>
-						<div class="border-white-bottom"></div>
-
-						<button class="btn-primary request_btn">
-							SEND FREE REQUEST
-						</button>
+				<div class="about_us_bg_img">
+					<div class="heading">
+						<h6 class="sub_heading">BOOK TODAY!</h6>
+						<h2 class="main_heading">
+							Booking Your Tasting Session or Discuss your project
+						</h2>
+						<span class="heading_underline"></span>
 					</div>
+
+					<button class="btn-primary request_btn">
+						SEND FREE REQUEST
+					</button>
 				</div>
 			</div>
 			<div class="testimonial row text-center">
@@ -704,17 +691,17 @@
 			<div class="row text-center">
 				<div class="footer">
 					<div class="footer_wrapper">
-						<div class="footer_column">
+						<div class="footer_column" id="footer-left">
 							<p class="footer_text">123-456-7890</p>
 							<p class="footer_text">INFO@YOURSITE.COM</p>
 						</div>
-						<div>
+						<div id="footer-center">
 							<img
 								src="./img/Web CB Profile.png"
 								class="footer_logo"
 							/>
 						</div>
-						<div class="footer_column">
+						<div class="footer_column" id="footer-right">
 							<p class="footer_text">
 								CHICAGO, IL 60606 <br />
 								123, NEW LENOX
@@ -730,6 +717,14 @@
 			</div>
 		</div>
 		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "300px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+
 			var slideIndex = 1;
 			showSlides(slideIndex);
 
