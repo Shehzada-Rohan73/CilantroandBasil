@@ -444,7 +444,7 @@ a {
 	justify-content: center;
 	height: 535px;
 	width: 100%;
-	background-image: url("./../img/bg2.jpg");
+	background-image: url("./../img/bg2.jpeg");
 	background-position: center;
 	background-size: cover;
 }
@@ -553,7 +553,7 @@ div.card-image img {
 }
 
 .clienaboutus {
-	background-image: url("./../img/main_bg.jpg") !important;
+	background-image: url("./../img/main_bg.jpeg") !important;
 	background-size: auto;
 }
 
@@ -602,7 +602,7 @@ div.card-image img {
 	justify-content: center;
 	background-size: cover;
 	background-position: center;
-	background-image: url("./../img/shutterstock_1198340449\ -\ Slider\ 1.jpg"),
+	background-image: url("./../img/shutterstock_1198340449\ -\ Slider\ 1.jpeg"),
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	background-blend-mode: overlay;
 }
@@ -696,12 +696,12 @@ div.card-image img {
 }
 
 .catering_card_1 {
-	background-image: url("./../img/shutterstock_1327176395\ -\ Naan.jpg"),
+	background-image: url("./../img/shutterstock_1327176395\ -\ Naan.jpeg"),
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .catering_card_2 {
-	background-image: url("./../img/shutterstock_1941625765\ -\ Paalak\ Paneer.jpg"),
+	background-image: url("./../img/shutterstock_1941625765\ -\ Paalak\ Paneer.jpeg"),
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
@@ -807,7 +807,7 @@ div.card-image img {
 /* Client CSS */
 .client {
 	height: 715px;
-	background-image: url("./../img/shutterstock_1198340449-Slider1.jpg"),
+	background-image: url("./../img/shutterstock_1198340449-Slider1.jpeg"),
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	background-blend-mode: overlay;
 	background-position: center;
@@ -1216,7 +1216,7 @@ textarea {
 /* Banner CSS */
 .banner {
 	height: 330px;
-	background-image: url("./../img/shutterstock_654336859-Slide2.jpg"),
+	background-image: url("./../img/shutterstock_654336859-Slide2.jpeg"),
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	background-blend-mode: overlay;
 	background-position: center;
@@ -1664,7 +1664,7 @@ textarea {
 }
 
 .blog-side {
-	background-image: url("./../img/main_bg.jpg");
+	background-image: url("./../img/main_bg.jpeg");
 	display: flex;
 	flex-wrap: wrap;
 	padding: 70px;
@@ -1690,6 +1690,7 @@ textarea {
 }
 
 .blog-img-heading {
+	width: 100%;
 	color: #434343;
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
